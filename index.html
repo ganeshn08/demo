@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-<title>Pick Our World Cup Date Night ⚽</title>
-<meta name="description" content="A private invitation: football, healthy snacks, and questionable match analysis." />
+<title>Pick Our World Cup Match Night ⚽</title>
+<meta name="description" content="A watch party invitation: football, healthy snacks, and unnecessary match analysis." />
 <style>
   :root {
     --bg-deep: #07100c;
@@ -12,8 +12,8 @@
     --pitch: #1db954;
     --pitch-dark: #0f7a38;
     --pitch-glow: rgba(46, 213, 115, 0.35);
-    --rose: #ff5e8a;
-    --rose-soft: #ffb3c6;
+    --fire: #ff8c2e;
+    --fire-soft: #ffc59e;
     --gold: #ffd166;
     --card: rgba(255, 255, 255, 0.06);
     --card-border: rgba(255, 255, 255, 0.12);
@@ -75,7 +75,7 @@
   .light.l1 { top: -40px; left: -30px; background: #ffe9a8; }
   .light.l2 { top: -50px; right: -30px; background: #ffe9a8; animation-delay: 2s; }
   .light.l3 { bottom: 10%; left: -60px; background: var(--pitch); opacity: 0.22; animation-delay: 1s; }
-  .light.l4 { bottom: 20%; right: -60px; background: var(--rose); opacity: 0.18; animation-delay: 3s; }
+  .light.l4 { bottom: 20%; right: -60px; background: var(--fire); opacity: 0.18; animation-delay: 3s; }
 
   @keyframes breathe {
     0%, 100% { opacity: 0.25; transform: scale(1); }
@@ -117,11 +117,11 @@
     font-size: clamp(1.5rem, 6vw, 2.1rem);
     font-weight: 800;
     margin: 8px 0 4px;
-    background: linear-gradient(90deg, var(--rose-soft), #fff, #b8f5cd);
+    background: linear-gradient(90deg, var(--fire-soft), #fff, #b8f5cd);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: 0 0 30px rgba(255, 94, 138, 0.25);
+    text-shadow: 0 0 30px rgba(255, 140, 46, 0.25);
   }
   .site-sub {
     text-align: center;
@@ -147,7 +147,7 @@
     box-shadow: 0 0 10px var(--pitch-glow);
     transform: scale(1.25);
   }
-  .step-dots span.done { background: var(--rose); }
+  .step-dots span.done { background: var(--fire); }
 
   h2.page-title {
     font-size: 1.35rem;
@@ -183,7 +183,7 @@
     position: absolute;
     top: 0; left: 0; right: 0;
     height: 3px;
-    background: linear-gradient(90deg, var(--pitch), var(--rose));
+    background: linear-gradient(90deg, var(--pitch), var(--fire));
     opacity: 0.7;
   }
   .match-card:not(.disabled):hover,
@@ -193,8 +193,8 @@
     box-shadow: var(--shadow-glow);
   }
   .match-card.selected {
-    border-color: var(--rose);
-    box-shadow: 0 0 26px rgba(255, 94, 138, 0.35);
+    border-color: var(--fire);
+    box-shadow: 0 0 26px rgba(255, 140, 46, 0.35);
   }
   .match-card.disabled { opacity: 0.55; }
   .match-card.disabled::before { background: rgba(255,255,255,0.2); }
@@ -218,7 +218,7 @@
     line-height: 1.45;
     margin-bottom: 6px;
   }
-  .match-vs { color: var(--rose); font-weight: 800; padding: 0 4px; }
+  .match-vs { color: var(--fire); font-weight: 800; padding: 0 4px; }
   .match-when {
     font-size: 0.85rem;
     color: var(--text-dim);
@@ -233,10 +233,10 @@
     border: 1px solid rgba(29, 185, 84, 0.28);
     color: #b8f5cd;
   }
-  .tag.pink {
-    background: rgba(255, 94, 138, 0.12);
-    border-color: rgba(255, 94, 138, 0.3);
-    color: var(--rose-soft);
+  .tag.hot {
+    background: rgba(255, 140, 46, 0.12);
+    border-color: rgba(255, 140, 46, 0.3);
+    color: var(--fire-soft);
   }
 
   /* ---------- Buttons ---------- */
@@ -267,14 +267,14 @@
 
   .btn-next {
     width: 100%;
-    background: linear-gradient(135deg, #e0447a, var(--rose));
+    background: linear-gradient(135deg, #e06a1e, var(--fire));
     color: #fff;
-    box-shadow: 0 4px 20px rgba(255, 94, 138, 0.4);
+    box-shadow: 0 4px 20px rgba(255, 140, 46, 0.4);
     font-size: 1.02rem;
     padding: 15px 22px;
     margin-top: 8px;
   }
-  .btn-next:hover { filter: brightness(1.08); box-shadow: 0 6px 28px rgba(255, 94, 138, 0.55); }
+  .btn-next:hover { filter: brightness(1.08); box-shadow: 0 6px 28px rgba(255, 140, 46, 0.55); }
   .btn-next:disabled {
     filter: grayscale(0.7) brightness(0.6);
     cursor: not-allowed;
@@ -295,8 +295,8 @@
   .after-select {
     display: none;
     text-align: center;
-    background: rgba(255, 94, 138, 0.1);
-    border: 1px dashed rgba(255, 94, 138, 0.4);
+    background: rgba(255, 140, 46, 0.1);
+    border: 1px dashed rgba(255, 140, 46, 0.4);
     border-radius: var(--radius);
     padding: 16px;
     margin: 4px 0 16px;
@@ -382,7 +382,7 @@
 
   .score-row { display: flex; align-items: center; gap: 12px; }
   .score-row .pred-input { text-align: center; font-size: 1.2rem; font-weight: 700; }
-  .score-dash { font-size: 1.3rem; font-weight: 800; color: var(--rose); }
+  .score-dash { font-size: 1.3rem; font-weight: 800; color: var(--fire); }
 
   .pill-row { display: flex; gap: 10px; flex-wrap: wrap; }
   .pill {
@@ -402,10 +402,10 @@
   }
   .pill:hover { border-color: rgba(255,255,255,0.35); color: var(--text); }
   .pill.on {
-    background: linear-gradient(135deg, rgba(255,94,138,0.25), rgba(29,185,84,0.2));
-    border-color: var(--rose);
+    background: linear-gradient(135deg, rgba(255,140,46,0.25), rgba(29,185,84,0.2));
+    border-color: var(--fire);
     color: #fff;
-    box-shadow: 0 0 14px rgba(255, 94, 138, 0.3);
+    box-shadow: 0 0 14px rgba(255, 140, 46, 0.3);
   }
 
   .playful-note {
@@ -447,8 +447,8 @@
     display: flex;
     align-items: center;
     gap: 12px;
-    background: rgba(255, 94, 138, 0.1);
-    border: 1px solid rgba(255, 94, 138, 0.35);
+    background: rgba(255, 140, 46, 0.1);
+    border: 1px solid rgba(255, 140, 46, 0.35);
     border-radius: var(--radius);
     padding: 15px;
     margin: 18px 0 6px;
@@ -456,18 +456,18 @@
     user-select: none;
     transition: box-shadow 0.2s;
   }
-  .agree-row:hover { box-shadow: 0 0 16px rgba(255, 94, 138, 0.2); }
+  .agree-row:hover { box-shadow: 0 0 16px rgba(255, 140, 46, 0.2); }
   .agree-box {
     width: 24px; height: 24px;
     flex-shrink: 0;
     border-radius: 7px;
-    border: 2px solid var(--rose);
+    border: 2px solid var(--fire);
     display: flex; align-items: center; justify-content: center;
     color: transparent;
     font-size: 0.85rem;
     transition: all 0.2s;
   }
-  .agree-row.on .agree-box { background: var(--rose); color: #fff; }
+  .agree-row.on .agree-box { background: var(--fire); color: #fff; }
   .agree-row input { position: absolute; opacity: 0; pointer-events: none; }
   .agree-text { font-size: 0.9rem; font-weight: 600; line-height: 1.4; }
 
@@ -486,7 +486,7 @@
     font-weight: 800;
     line-height: 1.35;
     margin-bottom: 10px;
-    background: linear-gradient(90deg, #b8f5cd, #fff, var(--rose-soft));
+    background: linear-gradient(90deg, #b8f5cd, #fff, var(--fire-soft));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -501,9 +501,9 @@
     border: none;
     color: #fff;
     cursor: pointer;
-    background: linear-gradient(135deg, #ff2e63, var(--rose), #ff7aa2);
+    background: linear-gradient(135deg, #ff6a00, var(--fire), #ffb066);
     background-size: 200% 200%;
-    box-shadow: 0 0 30px rgba(255, 94, 138, 0.55), 0 0 60px rgba(255, 94, 138, 0.25);
+    box-shadow: 0 0 30px rgba(255, 140, 46, 0.55), 0 0 60px rgba(255, 140, 46, 0.25);
     animation: yesGlow 2.2s ease-in-out infinite, yesShift 4s ease infinite;
     transition: transform 0.2s ease;
     margin-bottom: 30px;
@@ -512,8 +512,8 @@
   .btn-yes:hover { transform: scale(1.08); }
   .btn-yes:active { transform: scale(0.97); }
   @keyframes yesGlow {
-    0%, 100% { box-shadow: 0 0 26px rgba(255, 94, 138, 0.5), 0 0 55px rgba(255, 94, 138, 0.2); }
-    50% { box-shadow: 0 0 42px rgba(255, 94, 138, 0.8), 0 0 90px rgba(255, 94, 138, 0.35); }
+    0%, 100% { box-shadow: 0 0 26px rgba(255, 140, 46, 0.5), 0 0 55px rgba(255, 140, 46, 0.2); }
+    50% { box-shadow: 0 0 42px rgba(255, 140, 46, 0.8), 0 0 90px rgba(255, 140, 46, 0.35); }
   }
   @keyframes yesShift {
     0%, 100% { background-position: 0% 50%; }
@@ -603,8 +603,8 @@
 
   .confirm-msg {
     text-align: center;
-    background: rgba(255, 94, 138, 0.12);
-    border: 1px solid rgba(255, 94, 138, 0.35);
+    background: rgba(255, 140, 46, 0.12);
+    border: 1px solid rgba(255, 140, 46, 0.35);
     border-radius: var(--radius);
     padding: 18px 16px;
     margin: 18px 0 12px;
@@ -670,8 +670,8 @@
 <canvas id="confetti-canvas"></canvas>
 
 <div class="app">
-  <h1 class="site-title">Pick Our World Cup Date Night ⚽</h1>
-  <p class="site-sub">A private invitation. Guest list: you. Dress code: comfy. ❤️</p>
+  <h1 class="site-title">Pick Our World Cup Match Night ⚽</h1>
+  <p class="site-sub">A watch party invitation. Guest list: you. Standards: lowered accordingly. 🔥</p>
 
   <div class="step-dots" id="stepDots">
     <span></span><span></span><span></span><span></span><span></span><span></span>
@@ -679,45 +679,45 @@
 
   <!-- ================= PAGE 1: MATCH SELECTION ================= -->
   <section class="page" id="page-1">
-    <h2 class="page-title">🏟️ Step 1: Pick Our Match</h2>
-    <p class="page-sub">Only World Cup fixtures from 10th July onward.<br/>Because our love story deserves knockout-stage drama.</p>
+    <h2 class="page-title">🏟️ Step 1: Pick The Match</h2>
+    <p class="page-sub">Only World Cup fixtures from 10th July onward.<br/>Choose wisely — your football opinions are already on thin ice.</p>
 
     <div id="matchList"></div>
 
     <div class="after-select" id="matchConfirmMsg">
-      💚 <b>Okay, date fixed.</b><br/>
+      ⚽ <b>Okay, match fixed.</b><br/>
       Now let's decide what we're eating while pretending we're tactical experts.
     </div>
 
-    <button class="btn btn-next" id="toPage2" disabled>Next: Healthy Food Menu 🥗</button>
+    <button class="btn btn-next" id="toPage2">Next: Healthy Food Menu 🥗</button>
   </section>
 
   <!-- ================= PAGE 2: FOOD MENU ================= -->
   <section class="page" id="page-2">
     <h2 class="page-title">🥗 Step 2: Healthy Match Food Menu</h2>
-    <p class="page-sub">Pick everything you want. Abs are made in the kitchen,<br/>but memories are made on the couch.</p>
+    <p class="page-sub">Pick the snacks. Yes, healthy ones.<br/>Your body is a temple. Your football takes are a dumpster fire.</p>
 
-    <div class="food-count">Selected: <b id="foodCount">0</b> item(s) — the nutritionists approve, the referee approves.</div>
+    <div class="food-count">Selected: <b id="foodCount">0</b> item(s) — already more nutrition than your fantasy team ever had.</div>
     <div class="food-grid" id="foodGrid"></div>
 
     <div class="after-select" id="foodConfirmMsg">
       🥑 <b>Perfect.</b> Match selected, healthy food selected.<br/>
-      Now we can pretend this is a fitness date with football commentary.
+      Now we can pretend this is a fitness meetup with football commentary.
     </div>
 
-    <button class="btn btn-next" id="toPage3" disabled>Next: Match Predictions 🔮</button>
+    <button class="btn btn-next" id="toPage3">Next: Match Predictions 🔮</button>
     <button class="btn btn-back" data-back="1">← Back to matches</button>
   </section>
 
   <!-- ================= PAGE 3: PREDICTIONS ================= -->
   <section class="page" id="page-3">
     <h2 class="page-title">🔮 Step 3: Prediction Game</h2>
-    <p class="page-sub">Time to show off that football knowledge<br/>you definitely didn't google five minutes ago.</p>
+    <p class="page-sub">Time to show off the football knowledge<br/>you definitely didn't google five minutes ago.</p>
 
     <div class="pred-block">
       <div class="pred-label">🏆 Match winner</div>
       <select class="pred-select" id="predWinner">
-        <option value="" disabled selected>Who lifts the moment?</option>
+        <option value="" disabled selected>Commit to a take for once</option>
       </select>
     </div>
 
@@ -732,7 +732,7 @@
 
     <div class="pred-block">
       <div class="pred-label">⚽ First goal scorer</div>
-      <input class="pred-input" id="predScorer" type="text" maxlength="40" placeholder="Name your hero (or wild guess)" />
+      <input class="pred-input" id="predScorer" type="text" maxlength="40" placeholder="Name a player. Any player. Go on." />
     </div>
 
     <div class="pred-block">
@@ -746,52 +746,52 @@
     <div class="pred-block">
       <div class="pred-label">🎭 Who will be more dramatic while watching?</div>
       <div class="pill-row" data-group="predDramatic">
-        <div class="pill" data-value="Me">Me 🙋‍♂️</div>
-        <div class="pill" data-value="You">You 💁‍♀️</div>
+        <div class="pill" data-value="Me">Me 🙋</div>
+        <div class="pill" data-value="You">You 🤡</div>
       </div>
     </div>
 
     <div class="playful-note">
-      🎙️ Winner gets bragging rights. Loser gets to listen to football analysis they didn't ask for.
+      🎙️ Winner gets bragging rights. Loser gets to listen to football analysis they didn't ask for. (It'll be you. It's always you.)
     </div>
 
-    <button class="btn btn-next" id="toPage4" disabled>Next: Date Rules 📜</button>
+    <button class="btn btn-next" id="toPage4">Next: Match Night Rules 📜</button>
     <button class="btn btn-back" data-back="2">← Back to snacks</button>
   </section>
 
   <!-- ================= PAGE 4: RULES ================= -->
   <section class="page" id="page-4">
-    <h2 class="page-title">📜 Step 4: Official Date Night Rules</h2>
-    <p class="page-sub">Sanctioned by the International Federation of<br/>Cozy Football Dates (IFCFD). Very official.</p>
+    <h2 class="page-title">📜 Step 4: Official Match Night Rules</h2>
+    <p class="page-sub">Sanctioned by the International Federation of<br/>Couch Football Experts (IFCFE). Very official.</p>
 
     <div id="rulesList"></div>
 
     <label class="agree-row" id="agreeRow">
       <input type="checkbox" id="agreeCheck" />
       <span class="agree-box">✔</span>
-      <span class="agree-text">I agree to the official laws of this World Cup date. ⚽📝</span>
+      <span class="agree-text">I agree to the official laws of this World Cup match night. ⚽📝</span>
     </label>
 
-    <button class="btn btn-next" id="toPage5" disabled>Next: The Final Question 💘</button>
+    <button class="btn btn-next" id="toPage5">Next: The Final Question 👀</button>
     <button class="btn btn-back" data-back="3">← Back to predictions</button>
   </section>
 
   <!-- ================= PAGE 5: FINAL QUESTION ================= -->
   <section class="page" id="page-5">
     <div class="final-stage">
-      <div style="font-size: 3rem; margin-bottom: 14px;">⚽❤️</div>
-      <h2 class="final-title">Will you watch this World Cup match with me?</h2>
-      <p class="final-sub">No pressure. (Some pressure. The referee is watching.)</p>
-      <button class="btn-yes" id="btnYes">YES! ⚽❤️</button>
+      <div style="font-size: 3rem; margin-bottom: 14px;">⚽🔥</div>
+      <h2 class="final-title">So — you watching this World Cup match with me or what?</h2>
+      <p class="final-sub">It's not like you have better plans. We both know that.</p>
+      <button class="btn-yes" id="btnYes">YES, OBVIOUSLY ⚽</button>
       <div style="height: 64px;"></div>
     </div>
   </section>
 
   <!-- ================= PAGE 6: CONFIRMATION ================= -->
   <section class="page" id="page-6">
-    <div class="big-heart">⚽❤️</div>
-    <h2 class="page-title">It's Official — Date Confirmed!</h2>
-    <p class="page-sub">The paperwork went through. The date committee is thrilled.</p>
+    <div class="big-heart">⚽🔥</div>
+    <h2 class="page-title">It's Official — Match Night Confirmed!</h2>
+    <p class="page-sub">The paperwork went through. The committee had doubts about you, but approved it anyway.</p>
 
     <div class="summary-card">
       <div class="summary-label">🏟️ Selected match</div>
@@ -804,27 +804,27 @@
     </div>
 
     <div class="summary-card">
-      <div class="summary-label">🔮 Your predictions</div>
+      <div class="summary-label">🔮 Your predictions (screenshot saved for future roasting)</div>
       <div class="summary-value" id="sumPreds">—</div>
     </div>
 
     <div class="summary-card">
-      <div class="summary-label">📜 Date night rules</div>
-      <div class="summary-value">✅ Accepted, signed, and legally binding in the eyes of football. All 8 laws in effect.</div>
+      <div class="summary-label">📜 Match night rules</div>
+      <div class="summary-value">✅ Accepted, signed, and legally binding in the eyes of football. All 8 laws in effect. No appeals.</div>
     </div>
 
     <div class="confirm-msg">
-      Confirmed. You, me, football, healthy snacks, and unnecessary match analysis. Perfect date. ⚽❤️
+      Confirmed. You, me, football, healthy snacks, and unnecessary match analysis. What a lineup. ⚽🔥
     </div>
 
     <p class="confirm-msg-2">
-      Your World Cup date has been confirmed.<br/>
-      🏟️ Stadium: home. &nbsp; 👥 Crowd: two people.<br/>
-      🥗 Snacks: healthy but serious. &nbsp; 💘 Feelings: questionable but promising.
+      Your World Cup match night has been confirmed.<br/>
+      🏟️ Stadium: home. &nbsp; 👥 Crowd: two self-declared tactical geniuses.<br/>
+      🥗 Snacks: healthy but serious. &nbsp; 🎙️ Football takes: unverified and unstoppable.
     </p>
 
     <button class="btn btn-whatsapp" id="btnWhatsApp">📲 Send confirmation on WhatsApp</button>
-    <button class="btn btn-back" id="btnRestart">↺ Start over (change your mind about snacks, not me)</button>
+    <button class="btn btn-back" id="btnRestart">↺ Start over (change your snacks, not your terrible takes)</button>
   </section>
 </div>
 
@@ -836,7 +836,7 @@
   <div class="popup">
     <div class="popup-emoji">🖥️📺</div>
     <div class="popup-msg" id="popupMsg"></div>
-    <button class="btn btn-next" id="popupClose">Okay fine, checking Yes… 😅</button>
+    <button class="btn btn-next" id="popupClose">Fine, fine. Yes it is. 😮‍💨</button>
   </div>
 </div>
 
@@ -854,7 +854,7 @@
       stage: "Quarterfinal",
       teamA: "🇪🇸 Spain",
       teamB: "🇧🇪 Belgium",
-      tags: ["High drama", "Penalty heartbreak possible", "Perfect date-night fixture"],
+      tags: ["High drama", "Penalty heartbreak possible", "Perfect watch-party fixture"],
       selectable: true
     },
     {
@@ -874,7 +874,7 @@
       stage: "Quarterfinal",
       teamA: "Winner of 🇦🇷 Argentina / 🇪🇬 Egypt",
       teamB: "Winner of 🇨🇭 Switzerland / 🇨🇴 Colombia",
-      tags: ["High drama", "Underdog energy", "Perfect date-night fixture"],
+      tags: ["High drama", "Underdog energy", "Perfect watch-party fixture"],
       selectable: true
     },
     {
@@ -914,7 +914,7 @@
       stage: "Final",
       teamA: "Semifinal Winner 1",
       teamB: "Semifinal Winner 2",
-      tags: ["Final-worthy vibe", "High drama", "Perfect date-night fixture"],
+      tags: ["Final-worthy vibe", "High drama", "Perfect watch-party fixture"],
       selectable: true
     }
   ];
@@ -936,39 +936,40 @@
     { emoji: "🥥", name: "Coconut water" },
     { emoji: "🍋", name: "Lemon water" },
     { emoji: "☕", name: "Black coffee / cold coffee without sugar" },
-    { emoji: "👑", name: "“Something healthy she chooses because she’s the real captain”" },
+    { emoji: "💪", name: "“Something healthy you pick, since you suddenly think you're a nutritionist”" },
     { emoji: "🥗", name: "“Salad, but with World Cup-level confidence”" }
   ];
 
   var RULES = [
-    "No changing the channel during the match.",
-    "One person must pretend to understand formations.",
-    "Snacks cannot be finished before halftime.",
-    "If her team wins, she gets to say “I told you.”",
-    "If my team wins, I will still pretend to be humble.",
-    "If the match is boring, we roast the commentators.",
+    "No changing the channel during the match. Not even 'just to check the other score.'",
+    "One person must pretend to understand formations. It won't be you.",
+    "Snacks cannot be finished before halftime. Yes, this rule exists specifically because of you.",
+    "If your team wins, you get exactly ONE 'I told you so.' Use it wisely.",
+    "If my team wins, I will be insufferable. This is non-negotiable.",
+    "If the match is boring, we roast the commentators. And each other. Mostly each other.",
     "If it goes to penalties, nobody breathes.",
-    "Healthy food must still be eaten like match snacks."
+    "Healthy food must still be eaten like match snacks. Aggressively, with commentary."
   ];
 
   var NO_TEXTS = [
     "No", "Are you sure?", "Think again", "Wrong button", "VAR checking…",
-    "Offside decision", "Try Yes instead", "No is unavailable", "Button injured", "Ref says no"
+    "Offside decision", "Try Yes instead", "No is unavailable", "Button injured",
+    "Ref says no", "Coward detected", "Slower than your defending"
   ];
 
   var NO_POPUPS = [
     "VAR has reviewed your decision. No goal. Please choose Yes. ⚽",
-    "No is currently injured. Please select Yes.",
-    "This button was clearly offside.",
+    "No is currently injured. Like your team's back four.",
+    "This button was clearly offside. Much like your opinions.",
     "Referee says that click does not count.",
-    "Nice try, but the date committee has rejected your appeal.",
-    "Penalty missed. Try the Yes button.",
-    "That was not a valid footballing decision."
+    "Nice try, but the match night committee has rejected your appeal. Unanimously.",
+    "Penalty missed. Honestly? Expected.",
+    "That was not a valid footballing decision. Neither were your fantasy picks."
   ];
 
   /* =============== STATE =============== */
 
-  var STORAGE_KEY = "wcDateNight";
+  var STORAGE_KEY = "wcMatchNight";
 
   var state = {
     page: 1,
@@ -1004,7 +1005,7 @@
   /* =============== FLOATING FOOTBALLS =============== */
 
   (function makeFloaties() {
-    var icons = ["⚽", "❤️", "⚽", "🏆", "⚽", "💚", "⚽", "✨"];
+    var icons = ["⚽", "🔥", "⚽", "🏆", "⚽", "😂", "⚽", "✨"];
     var wrap = $("floaties");
     for (var i = 0; i < 10; i++) {
       var el = document.createElement("span");
@@ -1068,17 +1069,17 @@
           '<span class="match-stage">😴 ' + m.stage + '</span>' +
           '<div class="match-teams">12th July: Rest Day</div>' +
           '<div class="match-when">No match, only recovery from football emotions.</div>' +
-          '<div class="match-tags"><span class="tag pink">Cuddle-friendly schedule</span><span class="tag">Zero heartbreak guaranteed</span></div>';
+          '<div class="match-tags"><span class="tag hot">Nap-friendly schedule</span><span class="tag">Zero heartbreak guaranteed</span></div>';
       } else {
         var tagsHtml = m.tags.map(function (t, idx) {
-          return '<span class="tag' + (idx % 2 === 1 ? " pink" : "") + '">' + t + "</span>";
+          return '<span class="tag' + (idx % 2 === 1 ? " hot" : "") + '">' + t + "</span>";
         }).join("");
         card.innerHTML =
           '<span class="match-stage">🏆 ' + m.stage + '</span>' +
           '<div class="match-teams">' + m.teamA + ' <span class="match-vs">vs</span> ' + m.teamB + '</div>' +
           '<div class="match-when">📅 ' + m.date + ' &nbsp;·&nbsp; 🕗 ' + m.time + ' (our couch, our stadium)</div>' +
           '<div class="match-tags">' + tagsHtml + '</div>' +
-          '<button class="btn btn-choose">' + (state.matchId === m.id ? "💘 This is our match!" : "Choose this match 💚") + '</button>';
+          '<button class="btn btn-choose">' + (state.matchId === m.id ? "🔥 This is the one!" : "Choose this match ⚽") + '</button>';
         card.querySelector(".btn-choose").addEventListener("click", function () {
           state.matchId = m.id;
           saveState();
@@ -1145,7 +1146,7 @@
     var sel = $("predWinner");
     var m = getMatch();
     var current = state.predictions.winner;
-    sel.innerHTML = '<option value="" disabled' + (current ? "" : " selected") + '>Who lifts the moment?</option>';
+    sel.innerHTML = '<option value="" disabled' + (current ? "" : " selected") + '>Commit to a take for once</option>';
     var opts = m ? [m.teamA, m.teamB, "A dramatic draw, then penalties 😬"] : [];
     opts.forEach(function (o) {
       var opt = document.createElement("option");
@@ -1253,7 +1254,7 @@
       x = pad + Math.random() * (maxX - pad);
       y = pad + Math.random() * (maxY - pad);
       tries++;
-      /* keep it off the Yes button so misclicks land on happiness anyway */
+      /* keep it off the Yes button so misclicks land on the right answer anyway */
     } while (
       tries < 20 &&
       x < yesRect.right + 20 && x + w > yesRect.left - 20 &&
@@ -1267,7 +1268,7 @@
     void noBtn.offsetWidth;
     noBtn.classList.add("wiggle");
     noMoves++;
-    if (noMoves === 6) noBtn.textContent = "Okay this is cardio now 🏃‍♀️";
+    if (noMoves === 6) noBtn.textContent = "This is the most effort you've made all week 🏃";
   }
 
   noBtn.addEventListener("mouseenter", moveNoButton);
@@ -1287,7 +1288,7 @@
     }
   }, { passive: true });
 
-  /* if she somehow clicks it: VAR popup, stay on page, move again */
+  /* if they somehow click it: VAR popup, stay on page, move again */
   noBtn.addEventListener("click", function () {
     $("popupMsg").textContent = pick(NO_POPUPS);
     $("popupOverlay").classList.add("show");
@@ -1314,7 +1315,6 @@
 
   function buildSummaryText() {
     var m = getMatch();
-    var p = state.predictions;
     var matchLine = m ? (m.teamA + " vs " + m.teamB + " — " + m.stage + ", " + m.date + " at " + m.time) : "—";
     return matchLine;
   }
@@ -1341,26 +1341,25 @@
   }
 
   $("btnWhatsApp").addEventListener("click", function () {
-    var m = getMatch();
     var p = state.predictions;
     var lines = [
-      "⚽❤️ *WORLD CUP DATE NIGHT — CONFIRMED!* ❤️⚽",
+      "⚽🔥 *WORLD CUP MATCH NIGHT — CONFIRMED!* 🔥⚽",
       "",
       "🏟️ *Match:* " + buildSummaryText(),
       "",
       "🥗 *Healthy stadium menu:*",
       state.foods.map(function (f) { return "  • " + f; }).join("\n"),
       "",
-      "🔮 *Her predictions:*",
+      "🔮 *Your predictions (saved as evidence for future roasting):*",
       "  🏆 Winner: " + (p.winner || "—"),
       "  🔢 Score: " + (p.scoreA || "0") + "-" + (p.scoreB || "0"),
       "  ⚽ First goal: " + (p.scorer || "—"),
       "  😱 Penalties: " + (p.penalties || "—"),
       "  🎭 More dramatic: " + (p.dramatic || "—"),
       "",
-      "📜 Date night rules: ACCEPTED ✅",
+      "📜 Match night rules: ACCEPTED ✅ (no appeals)",
       "",
-      "Stadium: home. Crowd: two people. Snacks: healthy but serious. Feelings: questionable but promising. 💘"
+      "Stadium: home. Crowd: two self-declared tactical geniuses. Snacks: healthy but serious. Takes: unverified and unstoppable. 🎙️"
     ];
     var url = "https://wa.me/?text=" + encodeURIComponent(lines.join("\n"));
     window.open(url, "_blank");
@@ -1398,7 +1397,7 @@
     canvas.style.display = "block";
     confettiEndAt = Date.now() + durationMs;
 
-    var colors = ["#ff5e8a", "#1db954", "#ffd166", "#ffffff", "#ffb3c6", "#7ae0a3"];
+    var colors = ["#ff8c2e", "#1db954", "#ffd166", "#ffffff", "#ffc59e", "#7ae0a3"];
     for (var i = 0; i < 140; i++) {
       confettiPieces.push({
         x: Math.random() * canvas.width,
@@ -1470,6 +1469,10 @@
   /* =============== INIT =============== */
 
   loadState();
+  $("toPage2").disabled = true;
+  $("toPage3").disabled = true;
+  $("toPage4").disabled = true;
+  $("toPage5").disabled = true;
   renderMatches();
   renderFoods();
   restorePredictions();
